@@ -7,7 +7,7 @@ areaEl.addEventListener('dragover', event => {
 
 areaEl.addEventListener('drop', event => {
     event.preventDefault();
-    console.log(event.dataTransfer);  // косяк console.log как currentTarget = null
+    //console.log(event.dataTransfer.setData('text/plain', 'some text');  // косяк console.log как currentTarget = null
     console.log(event.dataTransfer.files);
 
     Array.from(event.dataTransfer.files).forEach(async (el) => {

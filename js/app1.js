@@ -9,10 +9,10 @@ imageEl.draggable = true;
 imageEl.src = 'https://im0-tub-ru.yandex.net/i?id=844dc629d8aa8584f2de091cd5f002a5-l&n=13';
 let draggable = null;
 
-//imageEl.addEventListener('dragstart', (event) => {
-   // event.dataTransfer.setDragImage('https://im0-tub-ru.yandex.net/i?id=844dc629d8aa8584f2de091cd5f002a5-l&n=13','1', '2');
-    //draggable = event.currentTarget;
-    //console.log('dragstart');
+imageEl.addEventListener('dragstart', (event) => {
+event.dataTransfer();
+draggable = event.currentTarget;
+console.log('dragstart');
 
 //itemEl.addEventListener('dragend', (event) => {
 //    draggable = null;
